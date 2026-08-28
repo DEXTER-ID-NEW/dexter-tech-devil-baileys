@@ -1,6 +1,6 @@
 # iOS-buttons / no-auto-follow build
 
-Base package: `@dexterid/baileys` 2.2.6.
+Base package: `@dexterid/baileys` 2.2.7.
 
 Changes in this archive:
 
@@ -10,6 +10,6 @@ Changes in this archive:
 - Added native-flow message context and a private-chat bot marker.
 - Avoided view-once wrapping for interactive button messages.
 - Added the focused button guide to `README.md`.
-- Preserved the original package README as `README.original.md`.
+- Updated the public root `README.md` to the full package guide with installation, authentication, messaging, interactive buttons, media, groups, privacy, newsletters, events, and best practices.
 
 This archive was prepared without running `npm install` or executing the package. JavaScript syntax was checked with `node --check`. WhatsApp/iOS rendering still depends on the receiving app version and server-side capability; experimental flows cannot be guaranteed.
