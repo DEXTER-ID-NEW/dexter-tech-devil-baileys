@@ -1296,7 +1296,7 @@ await sock.sendTableV2(
 await sock.sendList(
   jid,
   'Bot Info',
-  [['Name', 'DEXTER TECH DEVIL'], ['Version', '2.2.8'], ['Developer', 'DEXTER TECH DEVIL']],
+  [['Name', 'DEXTER TECH DEVIL'], ['Version', '2.2.9'], ['Developer', 'DEXTER TECH DEVIL']],
   quoted,
   { footer: '© DEXTER TECH DEVIL' }
 )
