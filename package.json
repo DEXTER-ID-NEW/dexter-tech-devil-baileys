@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@dextertechdevil/baileys",
+  "name": "@dexterid/baileys",
   "type": "module",
   "version": "2.2.6",
   "description": "Advanced WhatsApp Web API built on Baileys with iOS-friendly native-flow buttons and no unsolicited newsletter following.",
@@ -57,7 +57,8 @@
     "esm",
     "dexter-tech-devil",
     "ios-buttons",
-    "native-flow-buttons"
+    "native-flow-buttons",
+    "dexterid"
   ],
   "homepage": "https://github.com/DEXTER-ID-NEW/dexter-tech-devil-baileys/",
   "bugs": {

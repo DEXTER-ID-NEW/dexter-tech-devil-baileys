@@ -1,6 +1,6 @@
-# @dextertechdevil/baileys 2.2.6 — iOS buttons / no auto-follow build
+# @dexterid/baileys 2.2.6 — iOS buttons / no auto-follow build
 
-This ZIP is a full copy of `@dextertechdevil/baileys` 2.2.6 with:
+This ZIP is a full copy of `@dexterid/baileys` 2.2.6 with:
 
 - the unsolicited automatic newsletter follow removed;
 - high-level legacy lists, template buttons, and old button objects converted to native-flow messages;
@@ -25,7 +25,7 @@ npm install ./dexter-tech-devil-baileys-2.2.6-ios-buttons-no-auto-follow
 Or copy the extracted package into your project and import it normally:
 
 ```js
-import makeWASocket from '@dextertechdevil/baileys'
+import makeWASocket from '@dexterid/baileys'
 ```
 
 Do not add `viewOnce: true` to button messages.

@@ -5,7 +5,7 @@
   <img src="https://files.catbox.moe/gzkpf8.jpg" alt="DEXTER TECH DEVIL Banner" />
 </p>
 
-# @dextertechdevil/baileys
+# @dexterid/baileys
 
 <p>
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
@@ -16,24 +16,24 @@
 
 <p>
   <!-- NPM Version -->
-  <a href="https://www.npmjs.com/package/@dextertechdevil/baileys">
-    <img src="https://img.shields.io/npm/v/@dextertechdevil/baileys?color=success&logo=npm&style=flat-square" alt="NPM Version" />
+  <a href="https://www.npmjs.com/package/@dexterid/baileys">
+    <img src="https://img.shields.io/npm/v/@dexterid/baileys?color=success&logo=npm&style=flat-square" alt="NPM Version" />
   </a>
   <!-- Downloads -->
-  <a href="https://www.npmjs.com/package/@dextertechdevil/baileys">
-    <img src="https://img.shields.io/npm/dt/@dextertechdevil/baileys?color=blue&logo=npm&style=flat-square" alt="Downloads" />
+  <a href="https://www.npmjs.com/package/@dexterid/baileys">
+    <img src="https://img.shields.io/npm/dt/@dexterid/baileys?color=blue&logo=npm&style=flat-square" alt="Downloads" />
   </a>
   <!-- License -->
   <a href="https://github.com/DEXTER-ID-NEW/dexter-tech-devil-baileys/blob/main/LICENSE">
-    <img src="https://img.shields.io/npm/l/@dextertechdevil/baileys?color=yellow&style=flat-square" alt="License" />
+    <img src="https://img.shields.io/npm/l/@dexterid/baileys?color=yellow&style=flat-square" alt="License" />
   </a>
   <!-- Node Version -->
   <a href="https://nodejs.org">
-    <img src="https://img.shields.io/node/v/@dextertechdevil/baileys?style=flat-square" alt="Node Version" />
+    <img src="https://img.shields.io/node/v/@dexterid/baileys?style=flat-square" alt="Node Version" />
   </a>
   <!-- Socket Badge -->
-  <a href="https://socket.dev/npm/package/@dextertechdevil/baileys">
-    <img src="https://socket.dev/api/badge/npm/package/@dextertechdevil/baileys" alt="Socket Badge" />
+  <a href="https://socket.dev/npm/package/@dexterid/baileys">
+    <img src="https://socket.dev/api/badge/npm/package/@dexterid/baileys" alt="Socket Badge" />
   </a>
 </p>
 <p>
@@ -89,17 +89,17 @@
 
 ```bash
 # npm
-npm install @dextertechdevil/baileys
+npm install @dexterid/baileys
 
 # yarn
-yarn add @dextertechdevil/baileys
+yarn add @dexterid/baileys
 ```
 
 **Drop-in replacement for `@whiskeysockets/baileys`** — add this to `package.json`:
 ```json
 {
   "dependencies": {
-    "@whiskeysockets/baileys": "npm:@dextertechdevil/baileys"
+    "@whiskeysockets/baileys": "npm:@dexterid/baileys"
   }
 }
 
@@ -107,7 +107,7 @@ yarn add @dextertechdevil/baileys
 
 {
     "dependencies": {
-        "@dextertechdevil/baileys": "latest"
+        "@dexterid/baileys": "latest"
     }
 }
 ```
@@ -115,10 +115,10 @@ yarn add @dextertechdevil/baileys
 **Import:**
 ```javascript
 // ESM (recommended)
-import makeWASocket from '@dextertechdevil/baileys'
+import makeWASocket from '@dexterid/baileys'
 
 // CommonJS
-const { default: makeWASocket } = require('@dextertechdevil/baileys')
+const { default: makeWASocket } = require('@dexterid/baileys')
 ```
 
 ---
@@ -131,7 +131,7 @@ import makeWASocket, {
   DisconnectReason,
   makeCacheableSignalKeyStore,
   Browsers
-} from '@dextertechdevil/baileys'
+} from '@dexterid/baileys'
 import pino from 'pino'
 
 const connectToWhatsApp = async () => {
@@ -184,7 +184,7 @@ import makeWASocket, {
   useMultiFileAuthState,
   makeCacheableSignalKeyStore,
   Browsers
-} from '@dextertechdevil/baileys'
+} from '@dexterid/baileys'
 import pino from 'pino'
 
 const { state, saveCreds } = await useMultiFileAuthState('auth_session')
@@ -225,7 +225,7 @@ import makeWASocket, {
   useMultiFileAuthState,
   makeCacheableSignalKeyStore,
   Browsers
-} from '@dextertechdevil/baileys'
+} from '@dexterid/baileys'
 import qrcode from 'qrcode-terminal'
 import pino from 'pino'
 
@@ -270,7 +270,7 @@ The `browser` config tells WhatsApp what client you appear to be. This affects h
 | `Browsers.appropriate('Chrome')` | Auto-detects your OS | Uses your actual platform |
 
 ```javascript
-import { Browsers } from '@dextertechdevil/baileys'
+import { Browsers } from '@dexterid/baileys'
 
 // Pass any browser string as the second argument (Chrome, Safari, Firefox, etc.)
 const sock = makeWASocket({
@@ -331,7 +331,7 @@ Two adapters are available. They do **not** share an identical return shape — 
 Atomic writes, sha256 checksum integrity, per-file mutex locking, corrupt file recovery, and legacy file upgrade. Best for single-instance bots or local development.
 
 ```javascript
-import { useMultiFileAuthState } from '@dextertechdevil/baileys'
+import { useMultiFileAuthState } from '@dexterid/baileys'
 
 const { state, saveCreds, getStats } = await useMultiFileAuthState('auth_session', {
     preKeyRetention:   150,  // how many recent prekeys to keep (default: 150)
@@ -358,7 +358,7 @@ Storage format matches `useMultiFileAuthState` exactly: every value is wrapped a
 The first argument is the **session ID** — equivalent to the folder name in `useMultiFileAuthState`. It's used as the Keyv namespace, so multiple bots can safely share one backend. The second argument is a connection string, a pre-built `Keyv` instance, or a raw `KeyvStoreAdapter`:
 
 ```javascript
-import { useKeyvAuthState } from '@dextertechdevil/baileys'
+import { useKeyvAuthState } from '@dexterid/baileys'
 
 // ── Redis ─────────────────────────────────────────────────────────────────────
 const { state, saveCreds } = await useKeyvAuthState('bot1', 'redis://localhost:6379')
@@ -390,7 +390,7 @@ Supported connection string protocols: `redis:`/`rediss:`, `mongodb:`/`mongodb+s
 For backends without a connection string (e.g. DynamoDB), or to reuse one connection across multiple `useKeyvAuthState` calls yourself, pass a pre-built adapter or `Keyv` instance instead of a string:
 
 ```javascript
-import { useKeyvAuthState } from '@dextertechdevil/baileys'
+import { useKeyvAuthState } from '@dexterid/baileys'
 import KeyvMongo from '@keyv/mongo'
 
 const backend = new KeyvMongo('mongodb://localhost/baileys') // build once, share across sessions
@@ -1353,11 +1353,11 @@ await sock.sendLinkV2(
   jid,
   'Search results:\n- {{IE_0}}Official docs{{/IE_0}}\n- {{IE_1}}GitHub repo{{/IE_1}}',
   [
-    { url: 'https://www.npmjs.com/package/@dextertechdevil/baileys', displayName: 'Official docs', subtitle: 'npmjs.com' },
+    { url: 'https://www.npmjs.com/package/@dexterid/baileys', displayName: 'Official docs', subtitle: 'npmjs.com' },
     { url: 'https://github.com/DEXTER-ID-NEW/dexter-tech-devil-baileys', displayName: 'GitHub repo', subtitle: 'github.com' }
   ],
   quoted,
-  { headerText: '@dextertechdevil/baileys', footer: 'Reference links', searchEngine: 'MAME' }
+  { headerText: '@dexterid/baileys', footer: 'Reference links', searchEngine: 'MAME' }
 )
 ```
 
@@ -1562,7 +1562,7 @@ await sock.sendMessage(jid, { pin: { type: 0, time: 0, key: message.key } })
 ## 📥 Media Download
 
 ```javascript
-import { downloadMediaMessage, getContentType } from '@dextertechdevil/baileys'
+import { downloadMediaMessage, getContentType } from '@dexterid/baileys'
 
 sock.ev.on('messages.upsert', async ({ messages }) => {
   const msg = messages[0]
@@ -1749,7 +1749,7 @@ const suggestions = await sock.getUsernameRecommendations()
 const result = await sock.checkStatusWA('1234567890')
 
 // Or direct import (no socket needed)
-import { checkStatusWA } from '@dextertechdevil/baileys'
+import { checkStatusWA } from '@dexterid/baileys'
 const result = await checkStatusWA('1234567890')
 
 // Response examples:
@@ -1782,7 +1782,7 @@ const result = await checkStatusWA('1234567890')
 { number: '+94789958225', status: 'rate_limited', isBanned: false, isNeedOfficialWa: false, banInfo: null }
 
 // Usage example
-import { checkStatusWA } from '@dextertechdevil/baileys'
+import { checkStatusWA } from '@dexterid/baileys'
 const check = await checkStatusWA('1234567890')
 if (check.isBanned) {
   console.log(`Banned: ${check.banInfo.banType}`)
@@ -2024,7 +2024,7 @@ try {
 ### Poll Decryption
 
 ```javascript
-import { getAggregateVotesInPollMessage } from '@dextertechdevil/baileys'
+import { getAggregateVotesInPollMessage } from '@dexterid/baileys'
 
 sock.ev.on('messages.update', async (event) => {
   for (const { key, update } of event) {
@@ -2069,6 +2069,6 @@ This project is **not** affiliated with WhatsApp or Meta. Use responsibly:
 
 ⭐ **Star us on GitHub!** ⭐
 
-[GitHub](https://github.com/DEXTER-ID-NEW/dexter-tech-devil-baileys) • [NPM](https://www.npmjs.com/package/@dextertechdevil/baileys)
+[GitHub](https://github.com/DEXTER-ID-NEW/dexter-tech-devil-baileys) • [NPM](https://www.npmjs.com/package/@dexterid/baileys)
 
 </div>
