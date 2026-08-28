@@ -1,6 +1,6 @@
 # iOS-buttons / no-auto-follow build
 
-Base package: `@dexterid/baileys` 2.2.7.
+Base package: `@dexterid/baileys` 2.2.8.
 
 Changes in this archive:
 

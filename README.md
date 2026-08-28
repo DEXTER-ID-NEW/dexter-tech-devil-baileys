@@ -1,15 +1,11 @@
 <div align="center">
 
 <p>
-  <!-- Banner -->
-  <img src="https://files.catbox.moe/gzkpf8.jpg" alt="DEXTER TECH DEVIL Banner" />
+  <!-- DEXTER TECH DEVIL package logo -->
+  <img src="https://raw.githubusercontent.com/DEXTER-ID-NEW/dexter-tech-devil-baileys/main/assets/dexterid-baileys-logo.png" alt="@dexterid/baileys logo — DEXTER TECH DEVIL" width="420" />
 </p>
 
 # @dexterid/baileys
-
-<p>
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
-</p>
 
 
 **DEXTER TECH DEVIL WhatsApp Web API — Built on WhiskeySockets/Baileys**
@@ -1300,7 +1296,7 @@ await sock.sendTableV2(
 await sock.sendList(
   jid,
   'Bot Info',
-  [['Name', 'DEXTER TECH DEVIL'], ['Version', '2.2.7'], ['Developer', 'DEXTER TECH DEVIL']],
+  [['Name', 'DEXTER TECH DEVIL'], ['Version', '2.2.8'], ['Developer', 'DEXTER TECH DEVIL']],
   quoted,
   { footer: '© DEXTER TECH DEVIL' }
 )
